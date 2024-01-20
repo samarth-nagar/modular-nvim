@@ -4,9 +4,12 @@
 -- See the kickstart.nvim README for more information
 return {
   {
-    "karb94/neoscroll.nvim",
+    "krb94/neoscroll.nvim",
     config = function()
       require('neoscroll').setup {}
     end
   },
+
+  { "RRethy/vim-illuminate" },
+  'romgrk/doom-one.vim',
 }

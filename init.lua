@@ -19,6 +19,7 @@ Kickstart.nvim is a template for your own configuration.
   - https://learnxinyminutes.com/docs/lua/
 
 
+
   And then you can explore or search through `:help lua-guide`
   - https://neovim.io/doc/user/lua-guide.html
 

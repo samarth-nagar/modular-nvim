@@ -2,7 +2,9 @@
 -- See `:help nvim-treesitter`
 -- Defer Treesitter setup after first render to improve startup time of 'nvim {filename}'
 vim.defer_fn(function()
+    ---@diagnostic disable-next-line: missing-fields
     require('nvim-treesitter.configs').setup {
+
         -- Add languages to be installed here that you want installed for treesitter
         ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'tsx', 'javascript', 'typescript', 'vimdoc', 'vim', 'bash' },
 
@@ -16,7 +18,7 @@ vim.defer_fn(function()
             keymaps = {
                 init_selection = '<c-space>',
                 node_incremental = '<c-space>',
-                scope_incremental = '<c-s>',
+                scope_incremental = '<c-i>',
                 node_decremental = '<M-space>',
             },
         },
@@ -39,28 +41,28 @@ vim.defer_fn(function()
                 set_jumps = true, -- whether to set jumps in the jumplist
                 goto_next_start = {
                     [']m'] = '@function.outer',
-                    [']]'] = '@class.outer',
+                    [']o'] = '@class.outer',
                 },
                 goto_next_end = {
                     [']M'] = '@function.outer',
-                    [']['] = '@class.outer',
-                },
-                goto_previous_start = {
-                    ['[m'] = '@function.outer',
-                    ['[['] = '@class.outer',
+                    [']o'] = '@class.outer',
                 },
                 goto_previous_end = {
                     ['[M'] = '@function.outer',
-                    ['[]'] = '@class.outer',
+                    ['[o'] = '@class.outer',
+                },
+                goto_previous_start = {
+                    ['[m'] = '@function.outer',
+                    ['[o'] = '@class.outer',
                 },
             },
             swap = {
-                enable = true,
+                enable = false,
                 swap_next = {
-                    ['<leader>a'] = '@parameter.inner',
+                    -- ['<leader>a'] = '@parameter.inner',
                 },
                 swap_previous = {
-                    ['<leader>A'] = '@parameter.inner',
+                    -- ['<leader>A'] = '@parameter.inner',
                 },
             },
         },
