@@ -158,18 +158,18 @@ require('lazy').setup({
       inactive_sections = {
         lualine_a = {},
         lualine_b = {},
-        lualine_c = {},
+        lualine_c = { 'diff' },
         lualine_x = { 'location' },
         lualine_y = {},
         lualine_z = {}
       },
       tabline = {
+        lualine_a = {},
         lualine_b = { 'buffers' },
-        lualine_a = { '' },
         lualine_c = { '' },
         lualine_x = {},
-        lualine_z = {},
-        lualine_y = { '' }
+        lualine_y = {},
+        lualine_z = { 'mode' }
       },
     },
   },
