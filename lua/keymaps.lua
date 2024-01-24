@@ -4,6 +4,7 @@
 vim.keymap.set({ 'n', 'v' }, '<C-s>', ':w<CR> ', { silent = true })
 vim.keymap.set({ 'n', 'v' }, '<M-Q>', ':qa!<CR>', { silent = true })
 vim.keymap.set({ 'n', 'v' }, '<M-q>', ':q<CR>', { silent = true })
+vim.keymap.set({ 'i' }, 'jj', '<Esc>', { silent = true })
 
 
 vim.api.nvim_set_keymap('n', '<leader>ts', ':set scrolloff=0<CR>', { noremap = true })
@@ -14,8 +15,8 @@ vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>j', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>k', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>l', { noremap = true })
 vim.api.nvim_set_keymap('t', '<Esc>', '<C-\\><C-n>', { noremap = true })
-vim.api.nvim_set_keymap('n', '<leader>K', '<C-w>q', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<Tab>', ':bnext<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-Tab>', ':tabnext<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<S-Tab>', ':bprevious<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-x>', ':bdelete<CR>', { noremap = true, silent = true })
 
@@ -35,7 +36,7 @@ vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous dia
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
 -- vim.keymap.set('n', '<leader>tt', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
-vim.api.nvim_set_keymap('n', '<leader>tt', ':TroubleToggle<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>tt', ':term <CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>q', ':TroubleToggle<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '!', ':TroubleToggle<CR>', { noremap = true, silent = true })
 -- [[ Highlight on yank ]]

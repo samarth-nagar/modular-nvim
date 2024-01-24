@@ -165,9 +165,9 @@ require('lazy').setup({
       },
       tabline = {
         lualine_a = {},
-        lualine_b = { 'buffers' },
+        lualine_b = { 'buffers', },
         lualine_c = { '' },
-        lualine_x = {},
+        lualine_x = { 'tabs' },
         lualine_y = {},
         lualine_z = { 'mode' }
       },
