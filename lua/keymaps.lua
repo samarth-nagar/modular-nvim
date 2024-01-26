@@ -9,6 +9,8 @@ vim.keymap.set({ 'i' }, 'jj', '<Esc>', { silent = true })
 vim.api.nvim_set_keymap('n', '<leader>ts', ':set scrolloff=0<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>tS', ':set scrolloff=999<CR>', { noremap = true })
 
+vim.api.nvim_set_keymap('n', '<leader>ts', ':set scrolloff=0<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>tS', ':set scrolloff=999<CR>', { noremap = true })
 
 vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>j', { noremap = true })
@@ -37,6 +39,7 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnos
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
 -- vim.keymap.set('n', '<leader>tt', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
 vim.api.nvim_set_keymap('n', '<leader>tt', ':term <CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>tt', ':TroubleToggle<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>q', ':TroubleToggle<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '!', ':TroubleToggle<CR>', { noremap = true, silent = true })
 -- [[ Highlight on yank ]]
