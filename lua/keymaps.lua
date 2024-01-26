@@ -6,9 +6,9 @@ vim.keymap.set({ 'n', 'v' }, '<M-Q>', ':qa!<CR>', { silent = true })
 vim.keymap.set({ 'n', 'v' }, '<M-q>', ':q<CR>', { silent = true })
 vim.keymap.set({ 'i' }, 'jj', '<Esc>', { silent = true })
 
-
 vim.api.nvim_set_keymap('n', '<leader>ts', ':set scrolloff=0<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>tS', ':set scrolloff=999<CR>', { noremap = true })
+
 
 vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>j', { noremap = true })

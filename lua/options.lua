@@ -1,7 +1,6 @@
 -- [[ Setting options ]]
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
-
 vim.wo.number = true
 
 vim.wo.relativenumber = true
@@ -12,7 +11,7 @@ vim.opt.shiftwidth = 4
 
 vim.opt.expandtab = true
 
-vim.opt.scrolloff = 999
+vim.opt.scrolloff = 19
 
 vim.opt.conceallevel = 1
 -- Set highlight on search
