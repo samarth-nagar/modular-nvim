@@ -8,9 +8,9 @@ require('lazy').setup({
     -- NOTE: First, some plugins that don't require any configuration
 
     -- Git related plugins
+
     'tpope/vim-fugitive',
     'tpope/vim-rhubarb',
-
     -- Detect tabstop and shiftwidth automatically
     'tpope/vim-sleuth',
 
@@ -49,15 +49,15 @@ require('lazy').setup({
             'rafamadriz/friendly-snippets',
         },
     },
-
     -- Useful plugin to show you pending keybinds.
     { 'folke/which-key.nvim',  opts = {} },
     {
         -- Adds git related signs to the gutter, as well as utilities for managing changes
         'lewis6991/gitsigns.nvim',
         opts = {
+            -- numhl     = true,
             -- See `:help gitsigns.txt`
-            signs = {
+            signs     = {
                 add = { text = '+' },
                 change = { text = '~' },
                 delete = { text = '_' },
@@ -143,7 +143,7 @@ require('lazy').setup({
         opts = {
             options = {
                 icons_enabled = true,
-                theme = 'onedark',
+                theme = '',
                 component_separators = { left = "|", right = "|" },
                 section_separators = { left = "", right = "" },
             },
@@ -285,7 +285,15 @@ require('lazy').setup({
                 build = ':TSUpdate',
             },
 
-            'navarasu/onedark.nvim',
+            -- Lua
+            {
+                "folke/twilight.nvim",
+                opts = {
+                    -- your configuration comes here
+                    -- or leave it empty to use the default settings
+                    -- refer to the configuration section below
+                }
+            },
             -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
             --       These are some example plugins that I've included in the kickstart repository.
             --       Uncomment any of the lines below to enable them.

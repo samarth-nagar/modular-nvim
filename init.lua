@@ -4,7 +4,6 @@
 =====================================================================
 ==================== READ THIS BEFORE CONTINUING ====================
 =====================================================================
-
 Kickstart.nvim is *not* a distribution.
 
 Kickstart.nvim is a template for your own configuration.
@@ -57,6 +56,8 @@ require 'options'
 
 -- [[ Basic Keymaps ]]
 require 'keymaps'
+require 'keybinds'
+require 'keyforplugins'
 
 -- [[ Configure Telescope ]]
 -- (fuzzy finder)
