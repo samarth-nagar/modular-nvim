@@ -38,23 +38,23 @@ vim.defer_fn(function()
                 },
             },
             move = {
-                enable = true,
-                set_jumps = true, -- whether to set jumps in the jumplist
+                enable = false,
+                set_jumps = false, -- whether to set jumps in the jumplist
                 goto_next_start = {
-                    [']m'] = '@function.outer',
-                    [']o'] = '@class.outer',
+                    ['<leader>]m'] = '@function.outer',
+                    ['<leader>]o'] = '@class.outer',
                 },
                 goto_next_end = {
-                    [']M'] = '@function.outer',
-                    [']o'] = '@class.outer',
+                    ['<leader>]M'] = '@function.outer',
+                    ['<leader>]o'] = '@class.outer',
                 },
                 goto_previous_end = {
-                    ['[M'] = '@function.outer',
-                    ['[o'] = '@class.outer',
+                    ['<leader>[M'] = '@function.outer',
+                    ['<leader>[o'] = '@class.outer',
                 },
                 goto_previous_start = {
-                    ['[m'] = '@function.outer',
-                    ['[o'] = '@class.outer',
+                    ['<leader>[m'] = '@function.outer',
+                    ['<leader>[o'] = '@class.outer',
                 },
             },
             swap = {

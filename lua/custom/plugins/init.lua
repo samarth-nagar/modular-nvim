@@ -25,7 +25,12 @@ return {
         }
     },
     "ray-x/go.nvim",
-
+    {
+        "karb94/neoscroll.nvim",
+        config = function()
+            require('neoscroll').setup {}
+        end
+    },
     -- Lua
 
 }

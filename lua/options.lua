@@ -13,6 +13,8 @@ vim.opt.expandtab = true
 
 vim.opt.scrolloff = 19
 
+vim.opt.colorcolumn = "88"
+
 vim.opt.linebreak = true
 
 vim.opt.conceallevel = 1
@@ -25,7 +27,7 @@ vim.o.hlsearch = false
 vim.wo.number = true
 
 -- Enable mouse mode
-vim.o.mouse = 'a'
+vim.o.mouse = ''
 
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.
@@ -46,7 +48,7 @@ vim.wo.signcolumn = 'yes'
 
 -- Decrease update time
 vim.o.updatetime = 50
-vim.o.timeoutlen = 100
+vim.o.timeoutlen = 150
 
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'

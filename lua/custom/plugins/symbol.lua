@@ -31,7 +31,7 @@ return {
             position = "right",
             --relative_width = true,
             show_numbers = false,
-            width = 18
+            width = 20
         },
         preview_window = {
             auto_preview = true,
@@ -94,7 +94,7 @@ return {
                 },
                 Function = {
                     hl = "@function",
-                    icon = "f()"
+                    icon = "F{}"
                 },
                 Interface = {
                     hl = "@type",
@@ -106,7 +106,7 @@ return {
                 },
                 Method = {
                     hl = "@method",
-                    icon = "ƒ"
+                    icon = "ƒ()"
                 },
                 Module = {
                     hl = "@namespace",
@@ -118,7 +118,7 @@ return {
                 },
                 Null = {
                     hl = "@type",
-                    icon = " "
+                    icon = "_"
                 },
                 Number = {
                     hl = "@number",

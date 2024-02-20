@@ -135,45 +135,6 @@ require('lazy').setup({
             vim.cmd.colorscheme 'onedark'
         end,
     },
-
-    {
-        -- Set lualine as statusline
-        'nvim-lualine/lualine.nvim',
-        -- See `:help lualine.txt`
-        opts = {
-            options = {
-                icons_enabled = true,
-                theme = '',
-                component_separators = { left = "|", right = "|" },
-                section_separators = { left = "", right = "" },
-            },
-            sections = {
-                lualine_a = { "" },
-                lualine_b = { 'branch', 'diff', 'diagnostics' },
-                lualine_c = { 'encoding', "filename" },
-                lualine_x = { 'fileformat' },
-                lualine_y = { 'progress', 'location' },
-                lualine_z = {}
-            },
-            inactive_sections = {
-                lualine_a = {},
-                lualine_b = {},
-                lualine_c = { 'diff' },
-                lualine_x = { 'location' },
-                lualine_y = {},
-                lualine_z = {}
-            },
-            tabline = {
-                lualine_a = {},
-                lualine_b = { 'buffers' },
-                lualine_c = { '' },
-                lualine_x = {},
-                lualine_y = {},
-                lualine_z = { 'mode' }
-            },
-        },
-    },
-
     {
         -- Add indentation guides even on blank lines
         'lukas-reineke/indent-blankline.nvim',
@@ -294,6 +255,7 @@ require('lazy').setup({
                     -- refer to the configuration section below
                 }
             },
+            "nvimtools/none-ls.nvim",
             -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
             --       These are some example plugins that I've included in the kickstart repository.
             --       Uncomment any of the lines below to enable them.

@@ -17,8 +17,8 @@ local on_attach = function(_, bufnr)
 
     nmap('<leader>cr', vim.lsp.buf.rename, '[R]e[n]ame')
     nmap('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
-    nmap(']]', require('illuminate').goto_next_reference, 'Next [I]lluminate')
-    nmap('[[', require('illuminate').goto_prev_reference, 'Next [I]lluminate')
+    nmap(']f', require('illuminate').goto_next_reference, 'Next [I]lluminate')
+    nmap('[f', require('illuminate').goto_prev_reference, 'Next [I]lluminate')
     nmap('gd', require('telescope.builtin').lsp_definitions, '[G]oto [D]efinition')
     nmap('gr', require('telescope.builtin').lsp_references, '[G]oto [R]eferences')
     nmap('gI', require('telescope.builtin').lsp_implementations, '[G]oto [I]mplementation')
@@ -70,6 +70,7 @@ require('which-key').register({
 require('mason').setup()
 require('mason-lspconfig').setup()
 require('twilight').setup()
+require('zen-mode').setup()
 
 -- Enable the following language servers
 --  Feel free to add/remove any LSPs that you want here. They will automatically be installed.
