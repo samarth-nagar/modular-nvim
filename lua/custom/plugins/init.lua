@@ -31,6 +31,21 @@ return {
             require('neoscroll').setup {}
         end
     },
+    -- install without yarn or npm
+    {
+        "iamcco/markdown-preview.nvim",
+        cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+        ft = { "markdown" },
+        build = function() vim.fn["mkdp#util#install"]() end,
+    },
+    'kevinhwang91/nvim-ufo',
+    {
+        "folke/tokyonight.nvim",
+        lazy = false,
+        priority = 1000,
+        opts = {},
+    },
+    "sainnhe/sonokai"
     -- Lua
 
 }

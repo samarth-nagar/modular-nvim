@@ -26,6 +26,10 @@ vim.o.hlsearch = false
 -- Make line numbers default
 vim.wo.number = true
 
+vim.opt.splitbelow = true
+
+vim.opt.splitright = true
+
 -- Enable mouse mode
 vim.o.mouse = ''
 
@@ -47,8 +51,8 @@ vim.o.smartcase = true
 vim.wo.signcolumn = 'yes'
 
 -- Decrease update time
-vim.o.updatetime = 50
-vim.o.timeoutlen = 150
+vim.o.updatetime = 200
+vim.o.timeoutlen = 250
 
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
@@ -64,4 +68,6 @@ vim.notify = function(msg, ...)
 
     notify(msg, ...)
 end
+---------------------------for UFO--------------
+
 -- vim: ts=4 sts= sw=4 et

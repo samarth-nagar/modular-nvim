@@ -11,6 +11,7 @@ vim.keymap.set({ 'n' }, 'dw', 'diw', { silent = true })
 vim.keymap.set({ 'n' }, 'yw', 'yiw', { silent = true })
 vim.keymap.set({ 'n' }, 'cw', 'ciw', { silent = true })
 vim.keymap.set({ 'n' }, 'vv', 'V', { silent = true })
+vim.keymap.set({ 'i' }, 'jj', '<Esc>', { silent = true })
 
 vim.api.nvim_set_keymap('n', '<leader>ts', ':set scrolloff=0<CR>',
     { noremap = true })
@@ -67,6 +68,15 @@ vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float,
 vim.api.nvim_set_keymap('n', '<leader>tt', ':term <CR>',
     { noremap = true, silent = true })
 
+vim.api.nvim_set_keymap('n', '<leader>tv', ':vnew <CR>',
+    { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap('n', '<leader>ts', ':new <CR>',
+    { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap('n', '<leader>tT', ':tabnext <CR>',
+    { noremap = true, silent = true })
+
 vim.api.nvim_set_keymap('n', '!', ':TroubleToggle<CR>',
     { noremap = true, silent = true })
 
@@ -80,7 +90,7 @@ vim.keymap.set('n', '<C-d>', "<c-d>zz")
 vim.keymap.set('n', '<C-u>', "<c-u>zz")
 
 vim.keymap.set('n', 'n', 'nzzzv')
-vim.keymap.set('n', 'N', 'nzzzv')
+vim.keymap.set('n', 'N', 'Nzzzv')
 
 
 vim.keymap.set('x', '<leader>p', '\"_dP')
