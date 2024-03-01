@@ -7,6 +7,7 @@
 require('lazy').setup({
     -- NOTE: First, some plugins that don't require any configuration
 
+
     -- Git related plugins
 
     'tpope/vim-fugitive',
@@ -174,6 +175,7 @@ require('lazy').setup({
                     options = {
                         icons_enabled = true,
                         theme = 'onedark',
+                        -- theme = 'tokyonight',
                         component_separators = { left = "|", right = "|" },
                         section_separators = { left = "", right = " " },
                     },

@@ -31,7 +31,7 @@ return {
             position = "right",
             --relative_width = true,
             show_numbers = false,
-            width = 20
+            width = 18
         },
         preview_window = {
             auto_preview = true,

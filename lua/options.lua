@@ -7,6 +7,8 @@ vim.wo.relativenumber = true
 
 vim.opt.tabstop = 4
 
+vim.opt.cursorline = true
+
 vim.opt.shiftwidth = 4
 
 vim.opt.expandtab = true
@@ -21,7 +23,7 @@ vim.opt.conceallevel = 1
 
 -- Set highlight on search
 
-vim.o.hlsearch = false
+vim.o.hlsearch = true
 
 -- Make line numbers default
 vim.wo.number = true
@@ -31,7 +33,7 @@ vim.opt.splitbelow = true
 vim.opt.splitright = true
 
 -- Enable mouse mode
-vim.o.mouse = ''
+vim.o.mouse = "nvi"
 
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.

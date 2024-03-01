@@ -44,13 +44,12 @@ cmp.setup {
         end, { 'i', 's' }),
     },
     sources = {
-        { name = "luasnip" },
         { name = "nvim_lsp" },
-        { name = "buffer" },
         { name = "nvim_lua" },
+        { name = "buffer" },
         { name = "path" },
-        { name = "jupyter" },
-        -- { name = 'codeium' },
+        { name = "luasnip" },
+        { name = 'codeium' },
     },
 
 }

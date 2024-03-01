@@ -25,3 +25,7 @@ vim.keymap.set("n", "<leader>xx", function() require("trouble").toggle("document
 
 vim.keymap.set("n", "<leader>xq", function() require("trouble").toggle("quickfix") end, { desc = "quickfix" })
 vim.keymap.set("n", "<leader>xl", function() require("trouble").toggle("loclist") end, { desc = "loclist" })
+
+-- todo_comments
+
+vim.api.nvim_set_keymap('n', 'tc', ':Lazy load todo-comments.nvim <CR>', { noremap = true, silent = true })

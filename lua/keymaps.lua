@@ -2,7 +2,7 @@
 -- Keymaps for better default experience
 -- See `:help vim.keymap.set()`
 vim.keymap.set({ 'n', 'v' }, '<C-s>', ':w<CR> ', { silent = true })
-vim.keymap.set({ 'n', 'v' }, '<M-Q>', ':qa!<CR>', { silent = true })
+vim.keymap.set({ 'n', 'v' }, '<c-Q>', ':qa!<CR>', { silent = true })
 vim.keymap.set({ 'n', 'v' }, '<M-q>', ':q<CR>', { silent = true })
 vim.keymap.set({ 'n' }, '`2', 'm1`2', { silent = true })
 vim.keymap.set({ 'n' }, '`1', 'm1`2', { silent = true })
@@ -12,6 +12,9 @@ vim.keymap.set({ 'n' }, 'yw', 'yiw', { silent = true })
 vim.keymap.set({ 'n' }, 'cw', 'ciw', { silent = true })
 vim.keymap.set({ 'n' }, 'vv', 'V', { silent = true })
 vim.keymap.set({ 'i' }, 'jj', '<Esc>', { silent = true })
+vim.keymap.set({ 'n' }, '<Esc><Esc>', ':nohlsearch <CR>', { silent = true })
+vim.keymap.set({ 'n' }, '<Tab><Tab>', '<Esc>', { silent = true })
+
 
 vim.api.nvim_set_keymap('n', '<leader>ts', ':set scrolloff=0<CR>',
     { noremap = true })
@@ -29,7 +32,7 @@ vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>j', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>k', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>l', { noremap = true })
-vim.api.nvim_set_keymap('t', '<Esc>', '<C-\\><C-n>', { noremap = true })
+vim.api.nvim_set_keymap('t', '<Esc><Esc>', '<C-\\><C-n>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<Tab>', ':bnext<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-Tab>', ':tabnext<CR>',
     { noremap = true, silent = true })
