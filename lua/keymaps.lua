@@ -28,10 +28,6 @@ vim.api.nvim_set_keymap('n', '<leader>tS', ':set scrolloff=999<CR>',
 vim.api.nvim_set_keymap("n", "<leader>tC", ":Lazy load codeium.vim <cr>",
     { noremap = true })
 
-vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', { noremap = true })
-vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>j', { noremap = true })
-vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>k', { noremap = true })
-vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>l', { noremap = true })
 vim.api.nvim_set_keymap('t', '<Esc><Esc>', '<C-\\><C-n>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<Tab>', ':bnext<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-Tab>', ':tabnext<CR>',
@@ -43,6 +39,7 @@ vim.api.nvim_set_keymap('n', '<C-x>', ':bdelete<CR>',
 
 vim.api.nvim_set_keymap('n', '<M-t>', ':! ctp <CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<M-r>', ':! run <CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>rr', ':! run <CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', 'E', '$', { noremap = true })
 vim.api.nvim_set_keymap('n', 'B', '0', { noremap = true })
 
